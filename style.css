@@ -868,9 +868,14 @@ h2 {
 		font-size: 1.3rem;
 	}
 
-	p:not(nav p),
+	/* p:not(nav p),
 	button,
 	label {
+		font-size: 1.2rem;
+	} */
+
+	header:not(nav p) p, main p, .picks p, .service p, .story p, .event p {
+		
 		font-size: 1.2rem;
 	}
 

@@ -674,6 +674,7 @@ object-fit: cover;
   padding: 20px 0;
   border-bottom: 1px solid #666;
   margin-bottom: 40px;
+  text-align: center;
 }
 
 .text-red {
@@ -1005,7 +1006,11 @@ object-fit: cover;
   .qna-to details>summary>div:nth-child(2)>div:nth-child(1) {
     display: block;
   }
+/* .qna-to div details div p {
 
+
+  font-size: 1rem;
+} */
   .news-list div:nth-child(1) {
     display: flex;
     justify-content: space-between;
@@ -1049,6 +1054,12 @@ object-fit: cover;
   
   .qna-contact h3, .contact-end h3, .qna-to h3, .bd-write h3, .bd-see h3, .bd-list h3{
     font-size: 1.5rem;
+  }
+
+  .qna-to>div:nth-child(2){
+    text-align: left;
+    padding-left: 30px;
+  
   }
   
 }
