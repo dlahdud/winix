@@ -206,46 +206,46 @@ window.onload = function () {
 
 
 
-  // let images = [];
-  // let time = 2000;
+  let images = [];
+  let time = 2000;
 
-  // images[0] = 'https://cdn.winix.com/uploadData/bbs/08/brRF3T722U4QRARQrFG3BMHpax8tQb8h8zej8zG1.png';
-  // images[1] = 'https://www.winix.com/uploadData/bbs/08/bnkADcSwe3ia3O0vuwUUlaK8At7bgixUsOIZo2YR.jpg';
-  // images[2] = 'https://cdn.winix.com/uploadData/bbs/08/CbBMyqx1uomDXWAHsFLLFJ7fAFUQrOLlLhkt9Yec.png';
+  images[0] = 'https://cdn.winix.com/uploadData/bbs/08/brRF3T722U4QRARQrFG3BMHpax8tQb8h8zej8zG1.png';
+  images[1] = 'https://www.winix.com/uploadData/bbs/08/bnkADcSwe3ia3O0vuwUUlaK8At7bgixUsOIZo2YR.jpg';
+  images[2] = 'https://cdn.winix.com/uploadData/bbs/08/CbBMyqx1uomDXWAHsFLLFJ7fAFUQrOLlLhkt9Yec.png';
 
-  // function changeSlide() {
-  //   var i = 0;
-  //   document.eventslider.src = images[i];
-  //   if (i < images.length - 1) {
-  //     i++;
-  //   }
-  //   else {
-  //     i = 0;
-  //   }
-  //   setTimeout("changeSlide()", time);
-  // }
-  // window.onload = changeSlide;
+  function changeSlide() {
+    var i = 0;
+    document.eventslider.src = images[i];
+    if (i < images.length - 1) {
+      i++;
+    }
+    else {
+      i = 0;
+    }
+    setTimeout("changeSlide()", time);
+  }
+  window.onload = changeSlide;
 
 
 
-  // setInterval(function () {
-  //   let images = [];
-  //   let time = 2000;
+  setInterval(function () {
+    let images = [];
+    let time = 2000;
   
-  //   images[0] = 'https://cdn.winix.com/uploadData/bbs/08/brRF3T722U4QRARQrFG3BMHpax8tQb8h8zej8zG1.png';
-  //   images[1] = 'https://www.winix.com/uploadData/bbs/08/bnkADcSwe3ia3O0vuwUUlaK8At7bgixUsOIZo2YR.jpg';
-  //   images[2] = 'https://cdn.winix.com/uploadData/bbs/08/CbBMyqx1uomDXWAHsFLLFJ7fAFUQrOLlLhkt9Yec.png';
+    images[0] = 'https://cdn.winix.com/uploadData/bbs/08/brRF3T722U4QRARQrFG3BMHpax8tQb8h8zej8zG1.png';
+    images[1] = 'https://www.winix.com/uploadData/bbs/08/bnkADcSwe3ia3O0vuwUUlaK8At7bgixUsOIZo2YR.jpg';
+    images[2] = 'https://cdn.winix.com/uploadData/bbs/08/CbBMyqx1uomDXWAHsFLLFJ7fAFUQrOLlLhkt9Yec.png';
   
-  //   var i = 0;
-  //   document.eventslider.src = images[i];
-  //   if (i < images.length - 1) {
-  //     i++;
-  //   }
-  //   else {
-  //     i = 0;
-  //   }
+    var i = 0;
+    document.eventslider.src = images[i];
+    if (i < images.length - 1) {
+      i++;
+    }
+    else {
+      i = 0;
+    }
   
-  //   }, 1500);
+    }, 1500);
 
 
 
