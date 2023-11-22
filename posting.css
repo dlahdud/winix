@@ -136,6 +136,10 @@ button:hover {
   margin: 120px 5%;
 }
 
+.bd-write, .qna-contact, .faq{
+  margin-top: 0;
+}
+
 
 
 input[type="text"] {
@@ -975,6 +979,15 @@ object-fit: cover;
   .bd-write, .bd-see, .bd-list, .news-slid, .news-list, .faq, .qna-contact, .contact-end, .qna-to{
     margin: 120px auto 240px;
   }
+
+  .bd-write, .qna-contact, .faq{
+  margin-top: 0;
+}
+
+.news-slid{
+  margin-bottom: 0;
+}
+
 
   .list section {
     display: flex;
