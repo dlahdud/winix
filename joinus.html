@@ -5,8 +5,8 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>membership</title>
-  <script type="text/javascript" src="script.js"></script>
-  <link rel="stylesheet" href="style.css">
+	<script type="text/javascript" src="script.js"></script>
+	<link rel="stylesheet" href="style.css">
 	<link rel="stylesheet" href="membership.css">
 </head>
 
@@ -166,12 +166,12 @@
 
 			<p>이용약관동의</p>
 			<div class="agree">
-				<label><input type="checkbox"> 전체 동의하기</label>
+				<label><input type="checkbox" name="agreeAll" onclick="selectAll(this)"> 전체 동의하기</label>
 				<hr>
 				<div>
-					<label><input type="checkbox" required> WINIX 이용약관 동의 <span>(필수)</span></label>
-					<label><input type="checkbox" required> 개인정보 수집 및 이용 동의 <span>(필수)</label>
-					<label><input type="checkbox" required> 프로모션 정보 수신 동의 <span>(필수)</span></label>
+					<label><input type="checkbox" name="agree" required onclick="checkSelectAll()"> WINIX 이용약관 동의 <span>(필수)</span></label>
+					<label><input type="checkbox" name="agree" required onclick="checkSelectAll()"> 개인정보 수집 및 이용 동의 <span>(필수)</label>
+					<label><input type="checkbox" name="agree" required onclick="checkSelectAll()"> 프로모션 정보 수신 동의 <span>(필수)</span></label>
 				</div>
 			</div>
 			<input type="button" value="제출하기">
@@ -214,8 +214,8 @@
 			<p class="boxtext">WINIX 회원 가입이 완료되었습니다.</p>
 			<hr>
 			<div>
-				<button>홈으로</button>
-				<button>로그인</button>
+				<button  type="button" onclick="location.href='index.html'">홈으로</button>
+				<button type="button" onclick="location.href='login.html'">로그인</button>
 			</div>
 		</form>
 

@@ -664,7 +664,8 @@ object-fit: cover;
 }
 
 .marginbtn{
-  margin-bottom: 5px
+  margin-bottom: 5px;
+  cursor: pointer;
 }
 
 

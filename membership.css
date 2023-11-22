@@ -132,6 +132,10 @@ hr{
 	text-align: center;
 }
 
+.completed button, .withdrawal-done button, .Login button{
+	cursor: pointer;
+}
+
 form{
 	margin: 40px 5%;
 }
@@ -356,7 +360,6 @@ form h4{
 .completed hr{
 	margin: 40px 0;
 }
-
 
 
 

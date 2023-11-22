@@ -254,3 +254,26 @@ window.onload = function () {
 
 
 
+  /////////////////////멤버쉽 JOIN 스크립트
+
+  function checkSelectAll() {
+    let checkboxes = document.querySelectorAll('input[name="agree"]');
+    let checked = document.querySelectorAll('input[name="agree"]:checked');
+    let selectAll = document.querySelector('input[name="agreeAll"]');
+    if (checkboxes.length === checked.length) {
+      selectAll.checked = true;
+    } else {
+      selectAll.checked = false;
+    }
+  };
+
+  function selectAll(selectAll) {
+    let checkboxes = document.getElementsByName('agree');
+    checkboxes.forEach((checkbox) => {
+      checkbox.checked = selectAll.checked
+    })
+  };
+
+
+
+
