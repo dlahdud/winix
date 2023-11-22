@@ -1,0 +1,302 @@
+<!doctype html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3.0">
+	<title>winix-borad</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="posting.css">
+	<script type="text/javascript" src="script.js"></script>
+	<script src="posting.js"></script>
+	<!-- AOS Download-->
+	<link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<!-- 스와이프 -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+
+	<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+	<!--slick-->
+	<link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css'>
+	<link rel='stylesheet' href='https://mreq.github.io/slick-lightbox/dist/slick-lightbox.css'>
+</head>
+<body>
+
+	
+	<header>
+
+		<img src="images/icons/logo.png" alt=""  onclick="window.location.href='index.html'">
+	  
+		<div>
+		  <!-- <img src="https://www.winix.com/build/assets/header_search_w-ba023ddc.png" alt="">
+		  <img src="https://cdn.winix.com/assets/images/common/nw_cart_wh_w.png" alt="">
+		  <img src="https://cdn.winix.com/assets/images/common/nw_lock_wh_w.png" alt=""> -->
+		  <div class="burgermenus" onclick="opens()">
+			<span></span>
+			<span></span>
+			<span></span>
+		  </div>
+		</div>
+	  
+		<nav>
+		  <div>
+			<h5><a href="login.html">로그인</a></h5>
+			<h5><a href="joinus.html">회원가입</a></h5>
+		  </div>
+		  <div class="nav-icons">
+			<div onclick="return false;">
+			  <img src="images/icons/mypage.png" alt="">
+			  <p>마이페이지</p>
+			</div>
+			<div onclick="return false;">
+			  <img src="images/icons/heart.png" alt="">
+			  <p>관심상품</p>
+			</div>
+			<div onclick="return false;">
+			  <img src="images/icons/cart.png" alt="">
+			  <p>장바구니</p>
+			</div>
+		  </div>
+		  <div class="gnb">
+			<div>
+			  <a href="index.html"><h4>HOME</h4></a>
+			  <a href="purchase.html"><h4>PURCHASE</h4></a>
+			  <a href="login.html"><h4>LOGIN</h4></a>
+			  <a href="joinus.html"><h4>JOINUS</h4></a>
+			  <a href="board.html"><h4>BOARD</h4></a>
+			  <a href="qna.html"><h4>Q&A</h4></a>
+			  <a href="faq.html"><h4>FAQ</h4></a>
+			  <a href="news.html"><h4>NEWS</h4></a>
+			  <a href="remove.html"><h4>REMOVE</h4></a>
+			</div>
+		  <div class="nav-text">
+			<h5>위닉스 고객만족센터 <span>1544 - 5081</span></h5>
+			<h5>창문형 에어컨 원스탑 설치상담 <span>1670 - 3230</span></h5>
+			<h5>위닉스 뽀송 전담센터 <span>1600 - 4544</span></h5>
+			<p>월요일~금요일 09:00~18:00 <br> 토요일 09:00~13:00 (일요일, 공휴일 휴무) <br>공공기관(조달) 구매 안내 - 070-7611-4558
+			  <br> 통화요금: 발신자 부담
+			</p>
+		  </div>
+		</nav>
+		
+	  </header>
+
+	<article class="bd-text">
+
+		<h1>Board</h1>
+
+	</article>
+
+
+	<article class="bd-write">
+		<h3>글 작성하기</h3>
+		<select>
+			<option value="">카테고리</option>
+			<option value="">리뷰</option>
+			<option value="">고객의소리</option>
+		</select>
+
+		<input type="text" placeholder="제목을 입력하세요.">
+
+		<textarea name="" placeholder="내용을 입력하세요."></textarea>
+		<div>
+			<input type="file" id="file">
+			<label for="file"><img
+					src="images/icons/plus.png"></label>
+			<input type="file" id="file">
+			<label for="file"><img
+					src="images/icons/plus.png"></label>
+			<input type="file" id="file">
+			<label for="file"><img
+					src="images/icons/plus.png"></label>
+			<input type="file" id="file">
+			<label for="file"><img
+					src="images/icons/plus.png"></label>
+		</div>
+		<div> <button class="btn-eee">임시저장</button> <button class="btn-555">등록하기</button> </div>
+	</article>
+
+
+	<article class="bd-see">
+		<h3>게시글 보기</h3>
+
+		<div class="see-title">
+			<small>About WINIX</small>
+			<h4>위닉스 컴팩트 건조기 플러스를 소개합니다!</h4>
+		</div>
+
+		<div class="see-main">
+			<div>
+				<p>2023.11.09</p>
+				<div>
+					<p>좋아요</p><span>24</span>
+					<p>조회수</p><span>312</span>
+				</div>
+			</div>
+			<div>
+				<section>
+					<div><img
+							src="images/picture/write-img1.jpg">
+					</div>
+					<p>위닉스는 미니멀 라이프를 추구하지만,
+						완벽한 성능을 원하는 분들을 위해
+						기존 컴팩트 건조기에서 더 유용한 기능을 더해
+						컴팩트 건조기 플러스를 출시했습니다🥰</p>
+				</section>
+				<section>
+					<div><img
+							src="images/picture/write-img2.jpg">
+					</div>
+					<p>미니멀 플랫 디자인으로 인테리어 감성을 더해주고,
+						<br> 가벼워서 혼자서도 손쉽게 원하는 공간에 설치할 수 있어요🙂<br>
+						<br>집안 어디에 두어도 너무 잘 어울린답니다-!
+					</p>
+					<p>업그레이드된 바른 건조!
+						<br>새롭게 등장한 컴팩트 건조기 플러스와
+						경험해 보세요 :)
+					</p>
+				</section>
+			</div>
+			<div class="see-sharing">
+				<button><img
+						src="images/icons/like.png"></button>
+				<button><img
+						src="images/icons/share.png"></button>
+			</div>
+		</div>
+
+		<div class="see-comments">
+			<p>댓글 2개</p>
+			<section>
+				<div><img
+						src="images/icons/user.png"
+						alt=""></div>
+				<div>
+					<p>winix123</p>
+					<p>디자인이 정말 예쁘네요!</p>
+					<p>1시간 전</p>
+				</div>
+				<div><img
+						src="images/icons/comments-menu.png">
+				</div>
+			</section>
+			<section>
+				<div>
+					<img src="images/icons/user.png"
+						alt="">
+				</div>
+				<div>
+					<p>winixlover</p>
+					<p>집에 하나 두고 싶어요!</p>
+					<p>1시간 전</p>
+				</div>
+				<div><img
+						src="images/icons/comments-menu.png">
+				</div>
+			</section>
+			<textarea placeholder="댓글을 입력하세요"></textarea>
+			<div>
+				<div><input type="checkbox" class="input-chek" id="secret-check"><label for="secret-check"
+						class="form-chek">비밀글</label></div>
+				<div><button class="btn-555">등록하기</button></div>
+			</div>
+		</div>
+		<div class="see-popular">
+			<p>인기 게시글</p>
+			<section>
+				<div>
+					<p>새로 출시한 타워엣지는 더욱 세련된 디자인과 강력해진 필터 탈취성능으로 돌아왔는데요. 합리적인 가격 대비
+						퀄리티 높은 디자인과 성능을 자랑합니다! 극초미세먼지 제거와 더불어 깨끗한 공기와 마주할 수 있는데요. 각종 생활먼지를 한 번 더 관리해 주는 플러스케어 필터까지 더해주면
+						털 날림, 머리카락, 각종 생활 먼지를 편리하게 제거할 수 있어요-!</p>
+				</div>
+				<div>
+					<img
+						src="images/picture/post1.jpg">
+				</div>
+			</section>
+			<section>
+				<div>
+					<p>안녕하세요. 위닉스입니다. 컴팩트 건조기 플러스에 이어 위닉스의 50년 독보적 제습냉방 기술을 담은 위닉스 창문형에어컨이 새롭게 출시되었습니다 :) 50년 독보적 제습냉방
+						기술로 새로운 바람을 선사하는 위닉스! 새로운 바람을 담는 위닉스 창문형에어컨의 성능을 쏙쏙 살펴볼까요?</p>
+				</div>
+				<div>
+					<img
+						src="images/picture/post2.png">
+				</div>
+			</section>
+			<section>
+				<div>
+					<p>올바른 가습기 스테인리스 4.0L는 쉽고 위생적인 관리가 가능한 올케어 시스템을 가지고 있는데요. 믿을 수 있는 포스코304 스테인 물통이라서 세균 걱정은 덜고, 귀찮게
+						느껴지는 세척은 간편하게 할 수 있답니다. 물에 닿는 부품은 BPA FREE 인증을 받은 안전한 소재로 만들어져, 주요 부품의 경우 식기세척기 사용과 열탕소독 모두
+						가능합니다.</p>
+				</div>
+				<div>
+					<img src="images/picture/post3.jpg">
+				</div>
+			</section>
+		</div>
+	</article>
+
+
+	<article class="bd-list list">
+		<h3>게시판 목록</h3>
+		<section>
+			<div>
+				<img src="images/picture/bord-list1.jpg">
+			</div>
+			<div>
+				<h4>위닉스 신규 가입 이벤트</h4>
+				<p>위닉스 신규 가입 시 15% 할인 코드를 보내드립니다! (위닉스 홈페이지 직접 가입시에만 발송 가능합니다.) *5만원 이상 구매시 사용 가능합니다.
+				</p>
+				<small>6시간 전</small>
+			</div>
+		</section>
+		<section>
+			<div>
+				<img
+					src="images/picture/bord-list2.jpg">
+			</div>
+			<div>
+				<h4>창립 50주년 기념 선물있SHOW</h4>
+				<p>위닉스를 사랑해주시는 고객님께 감사한 마음을 담아 준비한 총 1,200만원 상당의 선물!</p>
+				<small>3일 전</small>
+			</div>
+		</section>
+		<section>
+			<div>
+				<img
+					src="images/picture/bord-list3.jpg">
+			</div>
+			<div>
+				<h4>OFF THE 미세먼지</h4>
+				<p>추워지는 날씨와 함께 찾아온 미세먼지! 위닉스 공기청정기, 컴팩트 건조기와 함께 고민해결하세요.
+				</p>
+				<small>10일 전</small>
+			</div>
+		</section>
+		<section>
+			<div>
+				<img
+					src="images/picture/bord-list4.jpg">
+			</div>
+			<div>
+				<h4>필터 정기구매 이벤트</h4>
+				<p>알아서 결제해주고 알아서 배송해주고 알아서 최대 할인까지 챙겨주니까</p>
+				<small> 17일 전</small>
+			</div>
+		</section>
+		<div><a>더 보기 +</a></div>
+	</article>
+
+
+	<div w3-include-html="footer.html"></div>
+
+</body>
+
+<script>
+	includeHTML();
+  </script>
+  
+  <script type="text/javascript" src="script.js"></script>
+
+</html>

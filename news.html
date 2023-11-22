@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3.0">
+	<title>winix-news</title>
+  <script type="text/javascript" src="script.js"></script>
+	<script src="posting.js"></script>
+  <link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="posting.css">
+	<!-- AOS Download-->
+	<link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<!-- 스와이프 -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+
+	<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+	<!--slick-->
+	<link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css'>
+	<link rel='stylesheet' href='https://mreq.github.io/slick-lightbox/dist/slick-lightbox.css'>
+</head>
+
+<body>
+  
+	<header>
+
+		<img src="images/icons/logo.png" alt=""  onclick="window.location.href='index.html'">
+	  
+		<div>
+		  <!-- <img src="https://www.winix.com/build/assets/header_search_w-ba023ddc.png" alt="">
+		  <img src="https://cdn.winix.com/assets/images/common/nw_cart_wh_w.png" alt="">
+		  <img src="https://cdn.winix.com/assets/images/common/nw_lock_wh_w.png" alt=""> -->
+		  <div class="burgermenus" onclick="opens()">
+			<span></span>
+			<span></span>
+			<span></span>
+		  </div>
+		</div>
+	  
+		<nav>
+		  <div>
+			<h5><a href="login.html">로그인</a></h5>
+			<h5><a href="joinus.html">회원가입</a></h5>
+		  </div>
+		  <div class="nav-icons">
+			<div onclick="return false;">
+			  <img src="images/icons/mypage.png" alt="">
+			  <p>마이페이지</p>
+			</div>
+			<div onclick="return false;">
+			  <img src="images/icons/heart.png" alt="">
+			  <p>관심상품</p>
+			</div>
+			<div onclick="return false;">
+			  <img src="images/icons/cart.png" alt="">
+			  <p>장바구니</p>
+			</div>
+		  </div>
+		  <div class="gnb">
+			<div>
+			  <a href="index.html"><h4>HOME</h4></a>
+			  <a href="purchase.html"><h4>PURCHASE</h4></a>
+			  <a href="login.html"><h4>LOGIN</h4></a>
+			  <a href="joinus.html"><h4>JOINUS</h4></a>
+			  <!--<h4><a href="">매장 찾기</a></h4>-->
+			  <a href="board.html"><h4>BOARD</h4></a>
+			  <a href="qna.html"><h4>Q&A</h4></a>
+			  <a href="faq.html"><h4>FAQ</h4></a>
+			  <a href="news.html"><h4>NEWS</h4></a>
+			  <a href="remove.html"><h4>REMOVE</h4></a>
+			</div>
+		  <div class="nav-text">
+			<h5>위닉스 고객만족센터 <span>1544 - 5081</span></h5>
+			<h5>창문형 에어컨 원스탑 설치상담 <span>1670 - 3230</span></h5>
+			<h5>위닉스 뽀송 전담센터 <span>1600 - 4544</span></h5>
+			<p>월요일~금요일 09:00~18:00 <br> 토요일 09:00~13:00 (일요일, 공휴일 휴무) <br>공공기관(조달) 구매 안내 - 070-7611-4558
+			  <br> 통화요금: 발신자 부담
+			</p>
+		  </div>
+		</nav>
+		
+	  </header>
+
+	<article class="news-slid">
+		<div>
+			<h1>WINIX NEWS</h1>
+			<p>미디어 홍보 자료 및 최신 소식을 알려드립니다.</p>
+		</div>
+	</article>
+
+	<article class="news-list list">
+		<div>
+			<p>총 <span class="text-red">312</span> 건</p>
+			<div>
+				<select>
+					<option value="">전체</option>
+					<option value="">제목</option>
+					<option value="">내용</option>
+				</select>
+				<div>
+					<input type="text" placeholder="검색어를 입력하세요.">
+					<img
+						src="images/icons/search.png">
+				</div>
+			</div>
+		</div>
+		<section>
+			<div>
+				<img src="images/picture/news1.jpg">
+				<div>+</div>
+			</div>
+			<div>
+				<h3>위닉스, 컴팩트 건조기 셀렉트샵 29CM(무신사) 단독 할인 프로모션</h3>
+				<p>종합생활가전 위닉스가 25일까지 셀렉트샵 29CM에서 컴팩트건조기 단독 할인행사를 진행 한다고 밝혔다.</p>
+				<small>23.11.04</small>
+			</div>
+		</section>
+		<section>
+			<div>
+				<img src="images/picture/news2.jpg">
+				<div>+</div>
+			</div>
+			<div>
+				<h3>2023년 11월 가을 한파에 올바른가습기 판매량 전월 대비 600% 급증</h3>
+				<p>열탕 소독 가능한 스테인리스 물통. BPA FREE 안전 소재 ‘위닉스 올바른 가습기 스테인리스 4.0L’. 올바른 가습기 판매량이 지난달 대비 600% 증가 했다고 밝혔다.</p>
+				<small>23.10.14</small>
+			</div>
+		</section>
+		<section>
+			<div>
+				<img src="images/picture/news3.jpg">
+				<div>+</div>
+			</div>
+			<div>
+				<h3>위닉스 공기청정기 제로S 초미세먼지 99.999% 제거 및 유해가스까지 걱정 끝</h3>
+				<p>종합생활가전기업 위닉스의 제로S 공기청정기는 99.999% 초미세먼지를 제거 한다. 1인가구 증가 트렌드에 맞춰 소비 패턴과 라이프 스타일을 파악하고 제품에 이를 적용하여
+					공기청정면적 43m2로 출시 되었다.</p>
+				<small>23.05.21</small>
+			</div>
+		</section>
+		<section>
+			<div>
+				<img src="images/picture/news4.png">
+				<div>+</div>
+			</div>
+			<div>
+				<h3>위닉스, 컴팩트 건조기 출시 한달 만에 1만대 판매 돌파</h3>
+				<p>종합생활가전 위닉스가 지난 8월 23일 출시한 ‘컴팩트건조기’ 모델이 온, 오프라인을 합쳐 한달 만에 1만대 판매를 돌파했다고 밝혔다. 이는 미니건조기 시장에서 가장 빠른 판매
+					속도라고 관계자는 전했다. 특히 지난 주말 롯데홈쇼핑 최유라쇼에서 단시간에 3,400대가 팔리는 등 빠른 입소문을 통해 추가 판매에 탄력을 받고 있다.</p>
+				<small>22.09.18</small>
+			</div>
+		</section>
+		<section>
+			<div>
+				<img src="images/picture/news5.jpg">
+				<div>+</div>
+			</div>
+			<div>
+				<h3>위닉스 디자인은 진화 중. ‘컴팩트건조기’ 2022년 IDEA, Good Design Award 수상</h3>
+				<p>종합생활가전 위닉스가 지속적으로 해외 디자인 어워드를 수상하며 제품 품질뿐만 아니라 실용, 혁신, 환경적인 측면에서 인정 받고 있다. 금번 어워드를 수상한 ‘컴팩트건조기’는 인테리어
+					소품과 공간의 조화로운 디자인을 인정 받아 ‘2022년 미국 IDEA AWARD, 한국 Good Design AWARD’를 수상 했다. 미국 'IDEA 디자인 어워드', 한국
+					‘Good Design AWARD’, 독일 'Red Dot 디자인 어워드', 독일 ’iF 디자인 어워드’ 는 세계 4대 디자인 어워드로 불린다.</p>
+				<small>22.05.27</small>
+			</div>
+		</section>
+		<section>
+			<div>
+				<img src="images/picture/news6.jpg">
+				<div>+</div>
+			</div>
+			<div>
+				<h3>위닉스 6회 연속 IFA 참가 ”유럽 시장 공략에 박차 가한다”</h3>
+				<p>종합생활가전 기업 위닉스는 2022 국제 가전 박람회에 6회 연속 참가, 유럽 시장 공략에 박차를 가한다.</p>
+				<small>22.09.02</small>
+			</div>
+		</section>
+		<div class="page">
+			<p class="checkpage">1</p>
+			<p>2</p>
+			<p>3</p>
+			<p>4</p>
+			<p>5</p>
+		</div>
+	</article>
+
+  <div w3-include-html="footer.html"></div>
+ 
+</body>
+
+<script>
+  includeHTML();
+</script>
+
+<script type="text/javascript" src="script.js"></script>
+
+</html>

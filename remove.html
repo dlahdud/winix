@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="chrom">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>membership</title>
+  <script type="text/javascript" src="script.js"></script>
+  <link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="membership.css">
+</head>
+
+<body>
+
+	<header>
+
+		<img src="images/icons/logo.png" alt=""  onclick="window.location.href='index.html'">
+	  
+		<div>
+		  <!-- <img src="https://www.winix.com/build/assets/header_search_w-ba023ddc.png" alt="">
+		  <img src="https://cdn.winix.com/assets/images/common/nw_cart_wh_w.png" alt="">
+		  <img src="https://cdn.winix.com/assets/images/common/nw_lock_wh_w.png" alt=""> -->
+		  <div class="burgermenus" onclick="opens()">
+			<span></span>
+			<span></span>
+			<span></span>
+		  </div>
+		</div>
+	  
+		<nav>
+		  <div>
+			<h5><a href="login.html">로그인</a></h5>
+			<h5><a href="joinus.html">회원가입</a></h5>
+		  </div>
+		  <div class="nav-icons">
+			<div onclick="return false;">
+			  <img src="images/icons/mypage.png" alt="">
+			  <p>마이페이지</p>
+			</div>
+			<div onclick="return false;">
+			  <img src="images/icons/heart.png" alt="">
+			  <p>관심상품</p>
+			</div>
+			<div onclick="return false;">
+			  <img src="images/icons/cart.png" alt="">
+			  <p>장바구니</p>
+			</div>
+		  </div>
+		  <div class="gnb">
+			<div>
+			  <a href="index.html"><h4>HOME</h4></a>
+			  <a href="purchase.html"><h4>PURCHASE</h4></a>
+			  <a href="login.html"><h4>LOGIN</h4></a>
+			  <a href="joinus.html"><h4>JOINUS</h4></a>
+			  <!--<h4><a href="">매장 찾기</a></h4>-->
+			  <a href="board.html"><h4>BOARD</h4></a>
+			  <a href="qna.html"><h4>Q&A</h4></a>
+			  <a href="faq.html"><h4>FAQ</h4></a>
+			  <a href="news.html"><h4>NEWS</h4></a>
+			  <a href="remove.html"><h4>REMOVE</h4></a>
+			</div>
+		  <div class="nav-text">
+			<h5>위닉스 고객만족센터 <span>1544 - 5081</span></h5>
+			<h5>창문형 에어컨 원스탑 설치상담 <span>1670 - 3230</span></h5>
+			<h5>위닉스 뽀송 전담센터 <span>1600 - 4544</span></h5>
+			<p>월요일~금요일 09:00~18:00 <br> 토요일 09:00~13:00 (일요일, 공휴일 휴무) <br>공공기관(조달) 구매 안내 - 070-7611-4558
+			  <br> 통화요금: 발신자 부담
+			</p>
+		  </div>
+		</nav>
+		
+	  </header>
+
+  <div class="Remove">
+
+		<h1>Remove Account</h1>
+
+		<form class="withdrawal">
+			<h4>회원탈퇴</h4>
+			<p class="boxtext"><b>정말로 탈퇴하시겠습니까?</b></p>
+			<p class="boxtext">탈퇴 시 이용내역이 삭제되며 서비스 이용이 제한됩니다. <br>또한 삭제된 계정은 복구되지 않습니다.</p>
+			<button>탈퇴하기</button>
+		</form>
+
+		<form class="survey">
+			<h4>설문조사</h4>
+			<p class="boxtext">불편했던 점, 개선할 점을 공유해주시면 <br>더 나은 서비스를 위해 반영하도록 하겠습니다.</p>
+			<p>탈퇴 사유</p>
+			<select name="reason" id="reason">
+				<option>선택해주세요</option>
+			</select>
+			<p> 건의 사항
+				<textarea name="Suggestions" id="Suggestions" cols="30" rows="10"
+					placeholder="소중한 의견 귀담아 듣겠습니다."></textarea>
+			</p>
+			<input type="submit" name="Survey" value="제출하기">
+		</form>
+
+		<form class="withdrawal-done">
+			<h4>탈퇴완료</h4>
+			<img src="images/icons/remove.png">
+			<h4>정상적으로 탈퇴 처리 되었습니다.</h4>
+			<p class="boxtext"><b>그동안 이용해주셔서 감사합니다.</b></p>
+			<button>홈으로</button>
+		</form>
+
+	</div>
+
+  <div w3-include-html="footer.html"></div>
+
+</body>
+
+<script>
+  includeHTML();
+</script>
+
+
+</html>

@@ -1,0 +1,265 @@
+<!doctype html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3.0">
+	<title>posting</title>
+
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="posting.css">
+	<script src="script.js"></script>
+	<script src="posting.js"></script>
+	<!-- AOS Download-->
+	<link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<!-- 스와이프 -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+
+	<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+	<!--slick-->
+	<link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css'>
+	<link rel='stylesheet' href='https://mreq.github.io/slick-lightbox/dist/slick-lightbox.css'>
+</head>
+<body>
+
+	<header>
+
+		<img src="images/icons/logo.png" alt=""  onclick="window.location.href='index.html'">
+	  
+		<div>
+		  <!-- <img src="https://www.winix.com/build/assets/header_search_w-ba023ddc.png" alt="">
+		  <img src="https://cdn.winix.com/assets/images/common/nw_cart_wh_w.png" alt="">
+		  <img src="https://cdn.winix.com/assets/images/common/nw_lock_wh_w.png" alt=""> -->
+		  <div class="burgermenus" onclick="opens()">
+			<span></span>
+			<span></span>
+			<span></span>
+		  </div>
+		</div>
+	  
+		<nav>
+		  <div>
+			<h5><a href="login.html">로그인</a></h5>
+			<h5><a href="joinus.html">회원가입</a></h5>
+		  </div>
+		  <div class="nav-icons">
+			<div onclick="return false;">
+			  <img src="images/icons/mypage.png" alt="">
+			  <p>마이페이지</p>
+			</div>
+			<div onclick="return false;">
+			  <img src="images/icons/heart.png" alt="">
+			  <p>관심상품</p>
+			</div>
+			<div onclick="return false;">
+			  <img src="images/icons/cart.png" alt="">
+			  <p>장바구니</p>
+			</div>
+		  </div>
+		  <div class="gnb">
+			<div>
+			  <a href="index.html"><h4>HOME</h4></a>
+			  <a href="purchase.html"><h4>PURCHASE</h4></a>
+			  <a href="login.html"><h4>LOGIN</h4></a>
+			  <a href="joinus.html"><h4>JOINUS</h4></a>
+			  <!--<h4><a href="">매장 찾기</a></h4>-->
+			  <a href="board.html"><h4>BOARD</h4></a>
+			  <a href="qna.html"><h4>Q&A</h4></a>
+			  <a href="faq.html"><h4>FAQ</h4></a>
+			  <a href="news.html"><h4>NEWS</h4></a>
+			  <a href="remove.html"><h4>REMOVE</h4></a>
+			</div>
+		  <div class="nav-text">
+			<h5>위닉스 고객만족센터 <span>1544 - 5081</span></h5>
+			<h5>창문형 에어컨 원스탑 설치상담 <span>1670 - 3230</span></h5>
+			<h5>위닉스 뽀송 전담센터 <span>1600 - 4544</span></h5>
+			<p>월요일~금요일 09:00~18:00 <br> 토요일 09:00~13:00 (일요일, 공휴일 휴무) <br>공공기관(조달) 구매 안내 - 070-7611-4558
+			  <br> 통화요금: 발신자 부담
+			</p>
+		  </div>
+		</nav>
+		
+	  </header>
+	  
+  
+  <article class="qna-text">
+		<h1>QNA</h1>
+	</article>
+
+
+	<article class="qna-contact">
+		<h3>문의하기</h3>
+
+		<select>
+			<option value="">선택해주세요</option>
+			<option value="">제품</option>
+			<option value="">청소</option>
+			<option value="">이벤트</option>
+			<option value="">회원정보</option>
+			<option value="">고객의 소리</option>
+			<option value="">회사일반문의</option>
+		</select>
+
+		<div>
+			<textarea placeholder="문의내용을 입력해주세요. (2000자 이내)"></textarea>
+			<div>
+				<p>0/2000자</p>
+			</div>
+			<div>
+				<label for="file">첨부파일</label>
+				<p>5MB이하의 이미지 파일(JPG, PNG, GIF)<br>
+					1개 첨부하실 수 있습니다.</p>
+			</div>
+		</div>
+		<div>
+			<p>문의에 대한 <span>답변 등록 여부</span>를 알려드립니다.</p>
+			<div>
+				<div><label><input type="checkbox">SMS</label></div>
+				<div><select>
+						<option value="">010</option>
+						<option value="">011</option>
+						<option value="">016</option>
+						<option value="">017</option>
+						<option value="">018</option>
+						<option value="">019</option>
+						<option value="">0130</option>
+						<option value="">0303</option>
+						<option value="">0502</option>
+						<option value="">0504</option>
+						<option value="">0505</option>
+						<option value="">0506</option>
+					</select>
+					<p>-</p>
+					<input type="text">
+					<p>-</p>
+					<input type="text">
+				</div>
+			</div>
+			<div>
+				<div><label><input type="checkbox">이메일</label></div>
+				<div>
+					<input type="text">
+					<select>
+						<option value="">직접입력</option>
+						<option value="" selected="">@naver.com</option>
+						<option value="">@gmail.com</option>
+						<option value="">@daum.com</option>
+						<option value="">@hanmail.com</option>
+					</select>
+				</div>
+			</div>
+			<button class="btn-color">등록하기</button>
+		</div>
+	</article>
+
+
+	<article class="contact-end">
+		<h3>문의완료</h3>
+		<div>
+			<img
+				src="images/icons/Inquiry.png">
+		</div>
+		<strong>문의가 정상적으로 등록되었습니다.<br>
+			이용해주셔서 감사합니다.</strong>
+		<p>영업일 기준으로 3일 이내에 답변드립니다.</p>
+		<div>
+			<button class="btn-eee marginbtn">홈으로</button>
+			<button class="btn-eee">나의 문의 목록</button>
+		</div>
+	</article>
+
+
+	<article class="qna-to">
+		<h3>문의 내역</h3>
+		<div>1:1 문의 내역이 <span class="text-red">3</span>건 있습니다.</div>
+		<div>
+			<details class="to-wait">
+				<summary>
+					<div>
+						<div>답변대기</div>
+						<div>이불 건조 시 이불이 꼬여서...</div>
+					</div>
+					<div>
+						<div>2023.11.28</div>
+						<div><img
+								src="images/icons/arrow.png"
+								alt=""></div>
+					</div>
+				</summary>
+				<div>
+					<div>질문</div>
+					<p>이불 건조 시 이불이 꼬여서 만두 형태로 건조 됩니다.</p>
+				</div>
+				<div>
+					<div>⤷답변</div>
+					<p>아직 질문에 답변이 달리지 않았습니다. 영업일 기준 3일 이내로 회신드립니다.</p>
+				</div>
+			</details>
+			<details>
+				<summary>
+					<div>
+						<div>답변완료</div>
+						<div>배터리 사용 수명은 어떻게...</div>
+					</div>
+					<div>
+						<div>2023.03.17</div>
+						<div><img
+								src="images/icons/arrow.png"
+								alt=""></div>
+					</div>
+				</summary>
+				<div>
+					<div>질문</div>
+					<p>배터리 사용 수명은 어떻게 되나요?</p>
+				</div>
+				<div>
+					<div>⤷답변</div>
+					<p>정확한 수명에 대한 기준은 정해져 있지 않습니다. 배터리를 효율적으로 사용하기 위해서는 완전 방전 상태가 되기 전 미리 미리 충전해 주시는 것이 좋으며
+						배터리가 방전되어 꺼졌을 경우 바로 충전해 주시기 바랍니다.</p>
+				</div>
+			</details>
+			<details>
+				<summary>
+					<div>
+						<div>답변완료</div>
+						<div>세탁기 탈수시 소음이 너무...</div>
+					</div>
+					<div>
+						<div>2023.03.01</div>
+						<div><img
+								src="images/icons/arrow.png"
+								alt=""></div>
+					</div>
+				</summary>
+				<div>
+					<div>질문</div>
+					<p>세탁기 탈수 시 소음이 너무 커요</p>
+				</div>
+				<div>
+					<div>⤷답변</div>
+					<p>탈수 진행 시, 세탁기 내부의 물을 외부로 배수 시키는 배수펌프가 '왕왕' '왕왕' 하며
+						함께 동작을 하면서 발생하는 소리 입니다. <br>탈수 시 물이 적을 경우에는 이 소리가
+						조금 더 크게 들립니다. 탈수 진행 초반 드럼의 회전력이 점차 빠르게 돌며 나중에는
+						최고치로 회전 하게 되는데, 최고치로 회전하기 전까지는 배수펌프 동작음을 사용자가
+						감지 할 수 있습니다. <br>
+						최고치로 회전할 때는 회전음에 묻혀 배수펌프 동작음이 잘 안들립니다. <br>
+						이후 최고치 회전을 거쳐 점차 회전이 떨어지면서 배수 펌프 동작도 멈추고
+						점차 드럼이 정지하게 됩니다. 이와 같은 일련의 과정에서 발생되는 동작음임을
+						참고하여 주시기 바랍니다.</p>
+				</div>
+			</details>
+		</div>
+	</article>
+
+  <div w3-include-html="footer.html"></div>
+  
+  <script>
+    includeHTML();
+  </script>
+
+</body>
+
+<script type="text/javascript" src="script.js"></script>
+
+</html>

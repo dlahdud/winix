@@ -1,0 +1,445 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap');
+
+
+@font-face {
+	font-family: 'ONE-Mobile-Title';
+	src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/ONE-Mobile-Title.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+*{	
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	word-break: keep-all;
+	box-sizing: border-box;
+	outline:px solid silver;
+	font-family: 'Noto Sans KR', sans-serif;
+}
+
+h1,h2,h3,h4{
+	font-family: 'Nanum Gothic', sans-serif; 
+	text-transform: uppercase;
+	cursor: default;
+}
+
+h1 {	
+	font-family: 'Nanum Gothic';
+	font-size: 2.2rem;
+}
+
+h2 {
+	font-size: 1.8rem;
+	margin-top: 30px;
+}
+
+h3 {
+	font-size: 1.6rem;
+}
+
+h4:not(header h4) {
+	font-size: 1.4rem;
+	margin: 0px 0 40px;
+}
+
+h5{
+	font-size: 1.1rem
+}
+
+p {
+	font-size: 1rem;
+}
+
+.boxtext { 
+	font-size: 1.1rem;
+	font-weight: 500;
+}
+
+a{
+	text-decoration: none;
+	color: inherit;
+}
+
+img {
+	width: 100px;
+}
+
+
+button, input, select, textarea,
+.birthwrapper{
+	width: 100%;
+	padding: 10px 18px;
+	border:1px solid #ddd;
+	border-radius: 4px;
+}
+
+button, input[type='submit'], input[type='button']{
+	background:	white;
+	font-size: 1rem;
+	font-weight: 500;
+	cursor: default;
+	transition: 0.4s;
+}
+
+select{
+	cursor: pointer;
+}
+
+button img{
+	width: 20px;
+	margin: 0 10px;
+}
+
+label{
+	font-size: 0.9rem;
+}
+
+input, select, textarea,
+.birthwrapper{
+	margin-top: 6px;
+	font-size: 0.9rem;
+}
+
+input[type="checkbox"]{
+	width: revert;
+	margin: 0;
+	cursor: pointer;
+}
+
+textarea{
+	resize: none;
+}
+
+form{
+	border:1px solid #ddd;
+	border-radius: 6px;
+	padding: 40px 20px 40px;
+}
+
+hr{
+	border: 1px solid #ddd;
+	margin: 10px 0;
+}
+
+/*start*/
+
+.Login, .Join, .Remove{
+	margin: 120px 0;
+	text-align: center;
+}
+
+form{
+	margin: 40px 5%;
+}
+
+form h4{
+	text-align: center;
+}
+
+.login-ids{
+	display: flex;
+	justify-content: space-between;
+	margin: 10px 0;
+	white-space: nowrap;
+}
+
+.login-ids label{
+	padding: 0;
+	line-height: 24px;
+	font-size: 0.9rem;
+	cursor: pointer;
+}
+
+.login-ids div p{
+	line-height: 24px;
+	display: inline-block;
+	vertical-align: bottom;
+	font-size: 0.9rem;
+	position: relative;
+	cursor: default;
+}
+
+.login-ids div>:last-child{
+	margin: 0 0 0 8px;
+}
+
+.login-ids div>:last-child::before{
+	content: '';	
+	display: block;
+	width: 1px;
+	height: 1rem;
+	background: #bbb;
+	position: absolute;
+	top: 50%;
+	left: -5px;
+	translate: 0 -50%;
+}
+
+.Login form >:nth-child(5){
+	margin: 40px 0;
+}
+
+.Login form >:nth-child(5)>:first-child{
+	color: white;
+	margin: 0;
+}
+
+.Login form >:nth-child(5)>:first-child:hover{
+	background: #3e336b;
+}
+
+.Login form >:nth-child(5)>:last-child{
+	border: 1px solid #ddd;
+}
+
+.Login form >:nth-child(5)>:last-child:hover, .terms>:nth-child(5):hover{
+	background: #ddd;
+}
+
+.Login form button{
+	margin-top: 6px;
+}
+
+.Login form >:nth-child(6){
+	padding: 30px 0 20px;
+	border-top: 1px solid #ddd;
+}
+
+.Login form >:nth-child(6)>:nth-child(1){
+	margin: 0 0 30px;
+}
+
+.Login form >:nth-child(6)>:nth-child(2){
+	margin: 0;
+}
+
+
+
+
+.Join button{
+	font-size: 1rem;
+}
+
+.info {
+	text-align: left;
+}
+
+.info> p{
+	margin-top: 30px;
+	padding: 0 0 0 4px;
+	font-weight: bold;
+	position: initial;
+}
+
+.info input[required] + p::after , .info>:nth-child(2)::after, .info>:nth-child(4)::after, .info>:nth-child(18)::after{
+	content: " *";
+	color: rgb(214, 14, 14);
+}
+
+.info >:nth-child(3) button, .info >:nth-child(13) button{
+	margin-top: 6px;
+	color: white;
+	background: #333;
+}
+
+.info>:nth-child(3), .info >:nth-child(13), .info >:nth-child(15){
+	display: flex;
+	margin-top: 10px;
+	flex-wrap: wrap;
+}
+
+.info >:nth-child(15){
+	flex-wrap: nowrap;
+}
+
+.info>:nth-child(15) input{
+	margin: 0 10px 0 0;
+	padding-right: 4px;
+}
+
+.info>:nth-child(15) button{
+	width: 40px;
+	padding: 10px;
+}
+
+.info>:nth-child(15) button img{
+	margin: 0 auto;
+}
+
+.info>:nth-child(15)>:nth-child(n+1){
+	border: none;
+}
+
+.info >:nth-child(15),
+.info >:nth-child(17){
+	border: 1px solid #ddd;
+	border-radius: 4px;
+}
+
+.info >:nth-child(17) label{
+	margin: 0 20px 0 0;
+}
+
+.info >:nth-child(17) label select{
+	border: none;
+	width: 60px;
+	padding: 0;
+	border: 0;
+	margin: 0;
+}
+
+.info >:nth-child(19){
+	margin-top: 10px;
+	padding: 10px;
+}
+
+.info >:nth-child(19) label{
+	cursor: pointer;
+}
+
+.info >:nth-child(19) div label{
+	display: block;
+	margin: 4px;
+}
+
+.info >:nth-child(19) div label span{
+	color: gray;
+}
+
+.Login form >:nth-child(5)>:first-child, .info>:last-child, .completed div>:nth-child(2){
+	background: #52438e;
+	color: white;
+}
+
+.info input[type='button']{
+	margin-top: 20px;
+}
+
+
+
+.terms div{
+	text-align: left;
+	height: 260px;
+	overflow-y: scroll;
+	border: 1px solid #ddd;
+	border-radius: 6px;
+}
+
+.terms p {
+	margin: 20px;
+	font-size: 0.9rem;
+}
+
+.terms>:nth-child(4), .completed div>:nth-child(1){
+	margin-bottom: 8px;
+	background: #333;
+	color: white;
+}
+
+.terms>:nth-child(5){
+	border: 1px solid #ddd;
+}
+
+.completed div {
+	display: flex;
+	justify-content: space-between;
+}
+
+.completed div>:nth-child(1) {
+	margin: 0 4px 0 0;
+}
+
+.completed hr{
+	margin: 40px 0;
+}
+
+
+
+
+
+.Remove button, .Remove input[type='submit']{
+	margin-top: 40px;
+	background-color: #f0f0f0;
+}
+
+.Remove button:hover, .Remove input[type='submit']:hover{
+	background-color: #aaa;
+}
+
+.withdrawal>:nth-child(3){
+	margin: 40px 16% 0;
+}
+
+.withdrawal>:nth-child(4){
+	width: 200px;
+}
+
+.survey>:nth-child(2){
+	margin-bottom: 40px;
+}
+
+.survey>:nth-child(3), .survey>:nth-child(5){
+	text-align: left;
+	font-weight: bold;
+	margin-top: 20px;
+}
+
+.survey>:last-child{
+	background: white;
+}
+
+.withdrawal-done >:nth-child(3){
+	margin-top: 40px;
+
+}
+
+
+
+.TOP{
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	text-align: center;
+ 	line-height: 40px;
+	background: #444;
+	color: white;
+	position: fixed;
+	bottom: 20px;
+	right: 6px;
+}
+
+
+@media screen and (min-width:768px) {
+
+	p{
+		font-size: 0.9rem;
+	}
+	
+	.agree label{
+		font-size: 1rem;
+	}
+
+	.Login, .Join, .Remove{
+		width: 600px;
+		margin: 120px auto 240px;
+	}
+
+	.info >:nth-child(3) button, .info >:nth-child(13) button{
+		width: 280px;
+		margin-top: 0;
+	}
+	
+	.info>:nth-child(3), .info >:nth-child(13){
+		flex-wrap: nowrap;
+	}
+	
+	.info>:nth-child(3) input, .info>:nth-child(13) input{
+		margin: 0 10px 0 0;
+	}
+	
+	
+}

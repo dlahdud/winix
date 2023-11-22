@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="chrom">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>winix-purchase</title>
+  <!-- rinks -->
+  <script type="text/javascript" src="script.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="purchase.css">
+
+</head>
+
+<body>
+
+	<header>
+
+		<img src="images/icons/logo.png" alt=""  onclick="window.location.href='index.html'">
+	  
+		<div>
+		  <!-- <img src="https://www.winix.com/build/assets/header_search_w-ba023ddc.png" alt="">
+		  <img src="https://cdn.winix.com/assets/images/common/nw_cart_wh_w.png" alt="">
+		  <img src="https://cdn.winix.com/assets/images/common/nw_lock_wh_w.png" alt=""> -->
+		  <div class="burgermenus" onclick="opens()">
+			<span></span>
+			<span></span>
+			<span></span>
+		  </div>
+		</div>
+	  
+		<nav>
+		  <div>
+			<h5><a href="login.html">로그인</a></h5>
+			<h5><a href="joinus.html">회원가입</a></h5>
+		  </div>
+		  <div class="nav-icons">
+			<div onclick="return false;">
+			  <img src="images/icons/mypage.png" alt="">
+			  <p>마이페이지</p>
+			</div>
+			<div onclick="return false;">
+			  <img src="images/icons/heart.png" alt="">
+			  <p>관심상품</p>
+			</div>
+			<div onclick="return false;">
+			  <img src="images/icons/cart.png" alt="">
+			  <p>장바구니</p>
+			</div>
+		  </div>
+		  <div class="gnb">
+			<div>
+			  <a href="index.html"><h4>HOME</h4></a>
+			  <a href="purchase.html"><h4>PURCHASE</h4></a>
+			  <a href="login.html"><h4>LOGIN</h4></a>
+			  <a href="joinus.html"><h4>JOINUS</h4></a>
+			  <!--<h4><a href="">매장 찾기</a></h4>-->
+			  <a href="board.html"><h4>BOARD</h4></a>
+			  <a href="qna.html"><h4>Q&A</h4></a>
+			  <a href="faq.html"><h4>FAQ</h4></a>
+			  <a href="news.html"><h4>NEWS</h4></a>
+			  <a href="remove.html"><h4>REMOVE</h4></a>
+			</div>
+		  <div class="nav-text">
+			<h5>위닉스 고객만족센터 <span>1544 - 5081</span></h5>
+			<h5>창문형 에어컨 원스탑 설치상담 <span>1670 - 3230</span></h5>
+			<h5>위닉스 뽀송 전담센터 <span>1600 - 4544</span></h5>
+			<p>월요일~금요일 09:00~18:00 <br> 토요일 09:00~13:00 (일요일, 공휴일 휴무) <br>공공기관(조달) 구매 안내 - 070-7611-4558
+			  <br> 통화요금: 발신자 부담
+			</p>
+		  </div>
+		</nav>
+		
+	  </header>	  
+
+
+	<div class="product-wrap">
+		<div>
+			<div>
+				<img id="image-container"
+					src="images/product/product-detail1.jpg">
+			</div>
+			<div>
+				<img onclick="change_img(this)"
+					src="images/product/product-detail1.jpg"
+					alt="">
+				<img onclick="change_img(this)"
+					src="images/product/product-detail2.jpg"
+					alt="">
+				<img onclick="change_img(this)"
+					src="images/product/product-detail3.jpg"
+					alt="">
+			</div>
+		</div>
+
+		<script>
+			let container = document.getElementById("image-container");
+			function change_img(image) {
+				container.src = image.src;
+			}
+		</script>
+
+		<div class="product-text">
+			<div>
+				<p class="newtag">NEW</p>
+				<input type="checkbox" id="heart">
+				<label for="heart" class="hearts" onclick="login()"></label>
+			</div>
+			<h4>공기청정기</h4>
+			<h3>타워 엣지 (화이트)</h3>
+			<h4>AT8E430-MWK</h4>
+			<h3>279,000원</h3>
+			<!-- <div>
+				<h3>총 구매가</h3>
+				<h3>0원</h3>
+			</div> -->
+			<div class="buttons">
+				<button onclick="login()">구매하기</button>
+				<button onclick="login()">장바구니</button>
+			</div>
+
+			<!--	<div>
+				<h3>필터 구매</h3>
+				<p>필터 선택 <span>(2)</span></p>
+				<div>
+					<div>
+						<img src="https://cdn.winix.com/uploadData/product/3948055715/fqWVzDeO4So80Z8N6Pjy3Pp1TlxZDU6omEkaWugm.jpg"
+							alt="">
+						<p>R(KR)</p>
+						<p><b>타워엣지 일체형 필터</b></p>
+						<h5>59,000원</h5>
+					</div>
+					<div>
+						<img src="https://cdn.winix.com/uploadData/product/3955183055/2b6lUwDIkOg6vNlIT5Z8zuz8GNzn8CKnfWjmHIMv.jpg"
+							alt="">
+						<p>X10</p>
+						<p><b>타워엣지 플러스 케어 필터</b></p>
+						<h5>59,000원</h5>
+					</div>
+				</div>
+				<div>
+					<div>
+						<p>구매선택</p>
+						<input type="radio" id="filter1">
+						<label for="filter2">1회 구매</label>
+						<input type="radio" id="filter2">
+						<label for="filter2">정기구매</label>
+					</div>
+					<div>
+						<p>수량선택</p>
+						<div>
+							<button>-</button>
+							<p>1</p>
+							<button>+</button>
+						</div>
+					</div>
+					<div>
+						<p>배송주기</p>
+						<input type="radio" id="filter2-1">
+						<label for="filter2-1">6개월</label>
+						<input type="radio" id="filter2-2">
+						<label for="filter2-2">12개월</label>
+					</div>
+					<ul>
+						<li>· 정기 구매시 즉시 발송되는 제품 건에 대한 결제가 이루어지며, 선택하신 배송주기에 맞춰 첫 결제 수단과 동일한 카드로 자동 결제가 진행됩니다.</li>
+						<li>· 필터 할인가는 두번째 배송 부터 적용이 됩니다. (6개월: 30%할인, 12개월: 20%할인)</li>
+						<li>· 카드 유효기간 만료, 잔액부족 등 결제 실패 시 정기배송이 진행되지 않을 수 있습니다.</li>
+						<li>· 정기구매 취소 및 기타 문의는 위닉스 고객센터(1544-5081) 이용 부탁드립니다.</li>
+						<li>· 카드교체시 정기결제서비스 신규신청으로만 가능하며, 할인 혜택은 두 번째 배송부터 적용됩니다.</li>
+					</ul>
+				</div>
+			</div> -->
+		</div>
+
+	</div>
+
+	
+	<script>
+
+	  function login() {
+		alert("로그인이 필요합니다.");
+	  };	
+
+	</script>
+
+	<div class="product-detail">
+		<input type="radio" name="detail-tab" id="detail1" checked>
+		<input type="radio" name="detail-tab" id="detail2" >
+		<div class="detail-tab">
+			<label for="detail1">
+				<h4>제품소개</h4>
+			</label>
+			<label for="detail2">
+				<h4>제품사양</h4>
+			</label>
+		</div>
+		<div class="detail-inner">
+			<div class="detail1">
+				<img src="images/product/product-detail-img.jpg" alt="">
+			</div>
+			<div class="detail2">
+				<table>
+					<caption>기본정보</caption>
+					<tr>
+						<td>제품명</td>
+						<td>2023년 위닉스 타워엣지</td>
+					</tr>
+					<tr>
+						<td>출시일</td>
+						<td>2023년 4월</td>
+					</tr>
+					<tr>
+						<td>모델명</td>
+						<td>AT8E430-MWK</td>
+					</tr>
+				</table>
+				<table>
+					<caption>제품사양</caption>
+					<tr>
+						<td>색상</td>
+						<td>화이트</td>
+					</tr>
+					<tr>
+						<td>에너지등급</td>
+						<td>1등급</td>
+					</tr>
+					<tr>
+						<td>소비전력</td>
+						<td>25W</td>
+					</tr>
+					<tr>
+						<td>무게</td>
+						<td>4.7kg</td>
+					</tr>
+					<tr>
+						<td>공기청정면적</td>
+						<td>43㎡</td>
+					</tr>
+					<tr>
+						<td>정격전압</td>
+						<td>220V / 60Hz</td>
+					</tr>
+					<tr>
+						<td>크기</td>
+						<td>286(W) * 286(D) * 518(H) mm</td>
+					</tr>
+				</table>
+				<table>
+					<caption>성능</caption>
+					<tr>
+						<td>청정시스템</td>
+						<td>360º 서라운드 에어 케어</td>
+					</tr>
+					<tr>
+						<td>스마트센서</td>
+						<td>먼지센서(PM 2.5)/조도센서</td>
+					</tr>
+					<tr>
+						<td>소음</td>
+						<td>49.2dB (터보, CA인증 기준)</td>
+					</tr>
+					<tr>
+						<td>풍량조절</td>
+						<td>6단계 (AUTO/약/중/강/터보/수면)</td>
+					</tr>
+				</table>
+				<table>
+					<caption>기능</caption>
+					<tr>
+						<td>공기청정도 표시</td>
+						<td>4단계 (파-초-주-빨)</td>
+					</tr>
+					<tr>
+						<td>필터교환 표시</td>
+						<td>○</td>
+					</tr>
+					<tr>
+						<td>차일드락(버튼잠금)</td>
+						<td>	-</td>
+					</tr>
+					<tr>
+						<td>조도센서 감지</td>
+						<td>○</td>
+					</tr>
+					<tr>
+						<td>모바일 매뉴얼</td>
+						<td>○</td>
+					</tr>
+					<tr>
+						<td>운전모드</td>
+						<td>자동/수동/수면</td>
+					</tr>
+				</table>
+				<table>
+					<caption>기타</caption>
+
+					<tr>
+						<td>KC인증</td>
+						<td>○</td>
+					</tr>
+					<tr>
+						<td>CA인증</td>
+						<td>○</td>
+					</tr>
+					<tr>
+						<td>A/S</td>
+						<td>2년 (홈페이지내 제품등록시)</td>
+					</tr>
+				</table>
+			</div>
+		</div>	
+	</div>
+
+  <div w3-include-html="footer.html"></div>
+
+
+</body>
+
+<script>
+  includeHTML();
+</script>
+
+<script type="text/javascript" src="script.js"></script>
+
+</html>

@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WINIX</title>
+  <link rel="stylesheet" href="style.css">
+  <script type="text/javascript" src="script.js"></script>
+
+  <!-- 메인 스와이퍼 -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!--카카오 맵 안됨ㅎ-->
+  <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=0fa788375d4bbe4eeea16a7225beb298"></script>
+  <!--AOS-->
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+
+<body>
+
+  <script>
+    AOS.init();
+  </script>
+
+  <!-- header -->
+  <header>
+
+    <img src="images/icons/logo.png" alt=""  onclick="window.location.href='index.html'">
+  
+    <div>
+      <!-- <img src="https://www.winix.com/build/assets/header_search_w-ba023ddc.png" alt="">
+      <img src="https://cdn.winix.com/assets/images/common/nw_cart_wh_w.png" alt="">
+      <img src="https://cdn.winix.com/assets/images/common/nw_lock_wh_w.png" alt=""> -->
+      <div class="burgermenus" onclick="opens()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  
+    <nav>
+      <div>
+        <h5><a href="login.html">로그인</a></h5>
+        <h5><a href="joinus.html">회원가입</a></h5>
+      </div>
+      <div class="nav-icons">
+        <div onclick="return false;">
+          <img src="images/icons/mypage.png" alt="">
+          <p>마이페이지</p>
+        </div>
+        <div onclick="return false;">
+          <img src="images/icons/heart.png" alt="">
+          <p>관심상품</p>
+        </div>
+        <div onclick="return false;">
+          <img src="images/icons/cart.png" alt="">
+          <p>장바구니</p>
+        </div>
+      </div>
+      <div class="gnb">
+        <div>
+          <a href="index.html"><h4>HOME</h4></a>
+          <a href="purchase.html"><h4>PURCHASE</h4></a>
+          <a href="login.html"><h4>LOGIN</h4></a>
+          <a href="joinus.html"><h4>JOINUS</h4></a>
+          <!--<h4><a href="">매장 찾기</a></h4>-->
+          <a href="board.html"><h4>BOARD</h4></a>
+          <a href="qna.html"><h4>Q&A</h4></a>
+          <a href="faq.html"><h4>FAQ</h4></a>
+          <a href="news.html"><h4>NEWS</h4></a>
+          <a href="remove.html"><h4>REMOVE</h4></a>
+        </div>
+      <div class="nav-text">
+        <h5>위닉스 고객만족센터 <span>1544 - 5081</span></h5>
+        <h5>창문형 에어컨 원스탑 설치상담 <span>1670 - 3230</span></h5>
+        <h5>위닉스 뽀송 전담센터 <span>1600 - 4544</span></h5>
+        <p>월요일~금요일 09:00~18:00 <br> 토요일 09:00~13:00 (일요일, 공휴일 휴무) <br>공공기관(조달) 구매 안내 - 070-7611-4558
+          <br> 통화요금: 발신자 부담
+        </p>
+      </div>
+    </nav>
+    
+  </header>
+
+
+  <main>
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <section class="swiper-slide mainimgbg1">
+          <img src="images/main/main-1.png" alt="">
+          <div>
+            <h1 class="maintxt-h1">TUMBLE</h1>
+            <button>텀블 패키지 보기</button>
+            <h4>새로운 선택의 시작 위닉스로 경험하는</h4>
+            <h3>New Tumble Life</h3>
+          </div>
+        </section>
+        <section class="swiper-slide mainimgbg2">
+          <img src="images/main/main-2.png" alt="">
+          <div>
+            <h1 class="maintxt-h1">TOWER EDGE</h1>
+            <button>타워엣지 제품 보기</button>
+            <h4>공기 청정기의 새로운 기준 <br>버티컬 라인 디자인, 공간에 엣지를 더하다</h4>
+            <h3> WINIX 타워 엣지</h3>
+          </div>
+        </section>
+        <section class="swiper-slide mainimgbg3">
+          <img src="images/main/main-3.png" alt="">
+          <div>
+            <h1 class="maintxt-h1">COMPACTDRYER+</h1>
+            <button>컴팩트건조기 플러스 제품 보기</button>
+            <h4>초대형 건조기를 컴팩트하게 담아내다 바르게 완성하는 데일리 건조</h4>
+            <h3>WINIX 컴팩트 건조기 플러스</h3>
+          </div>
+        </section>
+        <section class="swiper-slide mainimgbg4">
+          <img src="images/main/main-4.png" alt="">
+          <div>
+            <h1 class="maintxt-h1">17LWINIXPPOSONG</h1>
+            <button>위닉스뽀송 17L 제품 보기</button>
+            <h4>50년 제습명가 빈틈없이 넓은공간을 뽀송하게</h4>
+            <h3>WINIX 뽀송 제습기</h3>
+          </div>
+        </section>
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-pagination"></div>
+    </div>
+  </main>
+
+
+
+  <article class="picks">
+    <div>
+      <h2 class="maintxt-h2">WINIX's PICK</h2>
+      <button>more</button>
+    </div>
+    <div class="picks-container">
+      <div class="picks-wrapper">
+        <div draggable="false">
+          <img src="images/product/pick-1.jpg" alt="">
+          <h5>타워Q</h5>
+          <p>ATQE430-JWK</p>
+          <p>209,000원</p>
+          <h4>159,000원</h4>
+        </div>
+        <div draggable="false">
+          <img src="images/product/pick-2.jpg"
+            alt="">
+          <h5>위닉스뽀송 16L</h5>
+          <p>DN2H160-IWK</p>
+          <p>429,000원</p>
+          <h4>379,000원</h4>
+        </div>
+        <div draggable="false">
+          <img src="images/product/pick-3.jpg" alt="">
+          <h5>텀블건조기 8kg</h5>
+          <p>HB8M80-HWK</p>
+          <p>649,000원</p>
+          <h4>559,000원</h4>
+        </div>
+        <div draggable="false">
+          <img src="images/product/pick-4.jpg" alt="">
+          <h5>타워 프라임 일체형 필터</h5>
+          <p>CAF-N0S4</p>
+          <p>89,000원</p>
+          <h4>75,900원</h4>
+        </div>
+        <div draggable="false">
+          <img src="images/product/pick-5.jpg" alt="">
+          <h5>올바른 가습기 스테인리스 4.0L</h5>
+          <p>WL3E400-KNK</p>
+          <p>219,000원</p>
+          <h4>179,000원</h4>
+        </div>
+      </div>
+      <button id="picks-btn-left" class="picks-btn">
+        <p>&#8249;</p>
+      </button>
+      <button id="picks-btn-right" class="picks-btn">
+        <p>&#8250;</p>
+      </button>
+    </div>
+  </article>
+
+
+
+  <article class="service">
+    <div>
+      <h2 class="maintxt-h2">FILTER & CARE SERVICE</h2>
+      <button>more</button>
+    </div>
+    <div>
+      <input type="radio" name="service-tab" id="service1" checked>
+      <input type="radio" name="service-tab" id="service2">
+      <div class="service-tab">
+        <label for="service1">
+          <h5><span>위닉스 케어<br></span>WINIX CARE</h5>
+        </label>
+        <label for="service2">
+          <h5><span>위닉스 정품 필터<br></span>WINIX FILTER</h5>
+        </label>
+      </div>
+      <div class="service-inner">
+        <div>
+          <img src="images/main/main-care.jpg" alt="">
+          <div>
+            <h4>케어서비스 구매하기</h4>
+            <p>굿 케어 매니저의 꼼꼼한 점검으로 최적의 상태로 관리 · 유지하여 드립니다.</p>
+            <p><b>케어서비스 플러스</b></p>
+            <p>관리가 필요할 때 전문가의 1회 클리닝 서비스</p>
+            <p><b>케어서비스 멤버쉽</b></p>
+            <p>월 정기결제를 통한 정기 방문 서비스 </p>
+          </div>
+        </div>
+        <div>
+          <img src="images/main/main-filter.jpg" alt="">
+          <div>
+            <h4>공기청정기 필터 구매하기</h4>
+            <p> <b>공기청정기 필터 정기구매 최대 30% 할인</b></p>
+            <p>필터 배송주기에 따라 알아서 필터 배송해주는 필터 정기구매 서비스</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </article>
+
+
+  <article class="story">
+    <div>
+      <h2 class="maintxt-h2">WINIX STORY</h2>
+      <button>more</button>
+    </div>
+    <div>
+      <div class="story-container">
+        <img src="images/main/main-story1.jpg" alt=""
+          id="storyimg1" class="tabshow">
+        <img src="images/main/main-story2.jpg" alt=""
+          id="storyimg2">
+        <img src="images/main/main-story3.jpg" alt=""
+          id="storyimg3">
+        <img src="images/main/main-story4.jpg" alt=""
+          id="storyimg4">
+      </div>
+      <div class="story-tab-menu">
+        <div href="#storyimg1">
+          <p>[What's New] </p>
+          <p>새로워진 컴팩트건조기 플러스를 소개합니다!</p>
+        </div>
+        <div href="#storyimg2">
+          <p>[About WINIX]</p>
+          <p>위닉스 공기청정기 타워시리즈 전격 비교</p>
+        </div>
+        <div href="#storyimg3">
+          <p>[About WINIX] </p>
+          <p>위닉스 제습기 청소 방법</p>
+        </div>
+        <div href="#storyimg4">
+          <p>[What's New]</p>
+          <p> 위닉스 창문형에어컨을 소개합니다!</p>
+        </div>
+      </div>
+    </div>
+  </article>
+
+
+  <article class="event">
+    <div>
+      <h2 class="maintxt-h2">WINIX EVENT</h2>
+      <button>more</button>
+    </div>
+    <div>
+      <img name="eventslider" class="event-slide">
+      <div class="event-imgs">
+        <img src="images/main/event1.png" alt="">
+        <img src="images/main/event2.jpg" alt="">
+        <img src="images/main/event3.png" alt="">
+      </div>
+    </div>
+  </article>
+
+
+  <!--
+	<div class="maps">
+		<div id="map"></div>
+		<div>
+			<h3>현재 고객님과 가까운 서비스 센터를 안내해 드립니다.</h3>
+			<div>
+				<input type="search" placeholder="지역명 검색">
+				<button></button>
+			</div>
+		</div>
+	</div>
+
+
+	<script type="text/javascript"
+		src="//dapi.kakao.com/v2/maps/sdk.js?appkey=APIKEY&libraries=services,clusterer"></script>
+
+	<script type="text/javascript"
+		src="//dapi.kakao.com/v2/maps/sdk.js?appkey=0fa788375d4bbe4eeea16a7225beb298"></script>
+
+	<script charset="UTF-8" class="daum_roughmap_loader_script"
+		src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
+	<script>
+		var container = document.getElementById('map');
+		var options = {
+			center: new kakao.maps.LatLng(37.6078763601535, 127.047013480319),
+			draggable: false,
+			level: 3
+		};
+
+		var map = new kakao.maps.Map(container, options);
+
+		// 	new daum.roughmap.Lander({
+		//     "timestamp" : "1628172686297",
+		//     "key" : "26vj2",
+		//     "mapWidth" : "480",  // 지도 가로 사이즈
+		//     "mapHeight" : "360"  // 지도 세로 사이즈
+		//   }).render();
+
+		var markerPosition = new kakao.maps.LatLng(37.6078763601535, 127.047013480319);
+
+		// 마커를 생성합니다
+		var marker = new kakao.maps.Marker({
+			position: markerPosition
+		});
+
+		// 마커가 지도 위에 표시되도록 설정합니다
+		marker.setMap(map);
+
+		var iwContent = '<div style="padding:5px;">위닉스 강북서비스센터  <br><a href="https://map.kakao.com/link/map/위닉스 강북서비스센터,37.6078763601535, 127.047013480319" style="color:blue" target="_blank">큰지도보기</a> <a href="https://map.kakao.com/link/to/위닉스 강북서비스센터,37.6078763601535, 127.047013480319" style="color:blue" target="_blank">길찾기</a></div>', // 인포윈도우에 표출될 내용으로 HTML 문자열이나 document element가 가능합니다
+			iwPosition = new kakao.maps.LatLng(37.6078763601535, 127.047013480319); //인포윈도우 표시 위치입니다
+
+		// 인포윈도우를 생성합니다
+		var infowindow = new kakao.maps.InfoWindow({
+			position: iwPosition,
+			content: iwContent
+		});
+
+		infowindow.open(map, marker);
+
+		// function setZoomable(zoomable) {
+		//     // 마우스 휠로 지도 확대,축소 가능여부를 설정합니다
+		//     map.setZoomable(zoomable);
+		// }
+
+
+	</script>
+-->
+  <div class="callnumber-wrapper">
+    <div class="callnumber">
+      <h4>위닉스 고객만족센터<br> <span>1544-5081</span></h4>
+      <h4>창문형 에어컨 원스탑 설치상담 <br><span>1670-3230</span></h4>
+      <div>
+        <p>월요일~금요일 09:00~18:00</p>
+        <p>토요일 09:00~13:00(일요일, 공휴일 휴무)</p>
+        <p>통화요금: 발신자 부담</p>
+        <p><b>공공기관(조달) 구매 안내</b></p>
+        <p>070-7611-4558</p>
+      </div>
+      <div></div>
+    </div>
+  </div>
+
+  <!--<aside>
+		<img src="https://www.winix.com/build/assets/nw_rect_up-adfc6b00.png" alt="" onclick="return false;">
+	</aside>-->
+
+
+  <!-- footer part -->
+  <div w3-include-html="footer.html"></div>
+  <!-- footer part -->
+
+</body>
+
+<script>
+  includeHTML();
+</script>
+
+
+<script type="text/javascript" src="script.js"></script>
+
+
+</html>
